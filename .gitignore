@@ -1,0 +1,6 @@
+cours_iae/
+.venv/
+data/raceform.db
+raceform.db
+__pycache__/
+.ipynb_checkpoints/
