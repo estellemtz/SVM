@@ -16,6 +16,7 @@ La problématique du projet peut donc être formulée ainsi :
 dans quelle mesure les caractéristiques observables d’une course permettent-elles de prédire la probabilité qu’un cheval termine parmi les trois premiers ?
 
 Le jeu de données utilisé contient un ensemble d’observations de courses hippiques, avec des variables numériques et catégorielles décrivant différents aspects de la compétition.
+Les données utilisées dans ce projet proviennent du jeu de données Kaggle *Horse Racing Results (UK/Ireland, 2015–2025)*, mis à disposition par Deltaromeo. Après extraction et préparation, la base mobilisée couvre des courses observées entre 2015 et 2026 et représente environ 1 800 000 lignes pour 37 colonnes. Ce jeu de données rassemble des informations sur les chevaux, les courses, les jockeys, les entraîneurs ainsi que certaines variables liées au marché des paris.
 
 Afin de répondre à cette problématique, la démarche adoptée repose sur les étapes suivantes :
 
