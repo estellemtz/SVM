@@ -2,9 +2,14 @@
 
 ## Modèle retenu
 
-Le modèle final retenu est **Random Forest** car c'est celui qui avait les meilleurs résultats. 
+Le modèle final retenu est un **Random Forest**.
+Il a été sélectionné car il offre le meilleur compromis entre performance prédictive et robustesse par rapport aux autres modèles testés.
 
-## Hyperparamètres 
+---
+
+## Hyperparamètres du modèle
+
+Les hyperparamètres utilisés pour le modèle final sont les suivants :
 
 ```python
 RandomForestClassifier(
@@ -17,13 +22,22 @@ RandomForestClassifier(
 )
 ```
 
+---
 
-```python
-print(rf_random.best_params_)
-```
+## Justification
 
-puis recopier les hyperparamètres exacts ici.
+Ce paramétrage permet :
 
+* de limiter le surapprentissage grâce à une profondeur contrôlée (`max_depth`)
+* de stabiliser les prédictions via un nombre suffisant d’arbres (`n_estimators`)
+* de prendre en compte le déséquilibre des classes (`class_weight`)
+* d’assurer la reproductibilité des résultats (`random_state`)
+
+---
+
+## Remarque
+
+Ces hyperparamètres ont été déterminés après plusieurs tests et ajustements empiriques afin d’optimiser les performances du modèle.
 
 
 
