@@ -64,8 +64,8 @@ uv sync
 ---
 
 ## Reproduction du projet
-
-1. Télécharger le dataset (`raceform.db`)
+1. Cloner le repo
+1. Télécharger le dataset à partir du lien : https://drive.google.com/file/d/1dNkYE4WfnNfQoGLvFmnWlKXSm8-scKE-/view?usp=sharing  
 2. Le placer dans `data/`
 3. Installer les dépendances :
 
@@ -146,4 +146,4 @@ Le projet met en évidence que certaines variables influencent fortement la prob
 
 Projet réalisé par :
 
-* Estelle Mtz
+* Estelle Martinez 
