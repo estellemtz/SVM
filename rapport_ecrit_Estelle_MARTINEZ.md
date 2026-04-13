@@ -207,7 +207,7 @@ Cette organisation permet de mieux comprendre la nature des informations mobilis
 
 Le tableau suivant présente une synthèse des variables retenues.
 
-![variables](images/variables.png)
+![variables](images/varables.png)
 
 
 ## 4. Modélisation et comparaison des modèles
