@@ -1,76 +1,34 @@
-# Projet de machine learning :  Classification du top 3 en courses hippiques
+Projet de Machine Learning – Prédiction du top 3 en courses hippiques
+1. Objectif
+Ce projet vise à prédire si un cheval termine dans le top 3 d'une course à partir de données historiques hippiques.
 
-Ce dépôt contient un projet de **classification supervisée** visant à prédire si un cheval termine dans le **top 3** d'une course.
+Il répond aux consignes du projet :
 
-## Contenu du dépôt
+dataset de plus de 4000 observations
+problème de classification
+comparaison de plusieurs modèles
+interprétation globale et locale du meilleur modèle
+2. Problématique
+Dans quelle mesure les caractéristiques d’une course, d’un cheval et du contexte de pari permettent-elles de prédire la probabilité qu’un cheval termine dans les trois premiers ?
 
-- `notebooks/projet_ml_courses_hippiques.ipynb` : notebook principal du projet
-- `data/` : dossier pour le **dataset brut**
-- `pyproject.toml` : dépendances du projet gérées avec **UV**
-- `uv.lock` : verrouillage exact de l'environnement
-- `BEST_MODEL.md` : spécification des hyperparamètres du modèle retenu
-- `.python-version` : version de Python utilisée
+3. Dataset
+Le dataset brut est une base SQLite nommée raceform.db.
 
-## Version de Python
+Pour des raisons de taille, il n’est pas versionné directement sur GitHub. Téléchargement : https://drive.google.com/file/d/1dNkYE4WfnNfQoGLvFmnWlKXSm8-scKE-/view?usp=sharing
 
-Le notebook a été exécuté avec **Python 3.11.14**.
+Placer le fichier ici : data/raceform.db
 
-## Reproductibilité
+Voir aussi : data/README.md
 
-### 1. Installer UV
-
-Suivre la documentation officielle de UV.
-
-### 2. Cloner le dépôt
-
-```bash
-git clone https://github.com/estellemtz/SVM.git
-cd SVM
-```
-
-### 3. Ajouter le dataset brut
-
-Déposer le fichier brut dans :
-
-```text
-data/raceform.db
-```
-
-### 4. Synchroniser l'environnement
-
-```bash
-uv sync
-```
-
-### 5. Lancer le notebook
-
-```bash
-uv run jupyter notebook
-```
-
-## Modélisation
-
-Les modèles comparés dans le notebook incluent notamment :
-
-- Régression logistique
-- SVM linéaire calibré
-- Random Forest
-- XGBoost
-- Bagging Classifier
-- KNN
-- MLP Classifier
-
-## Explicabilité / interprétabilité
-
-Méthodes utilisées dans le notebook :
-
-- Feature importance
-- Permutation importance
-- SHAP global
-- SHAP local
-- PDP
-- ALE
-- ICE
-
-
-
+4. Structure du dépôt
+.
+├── images/
+├── notebooks/
+│   └── projet_ml_courses_hippiques.ipynb
+├── data/
+│   └── README.md
+├── README.md
+├── rapport.md
+├── pyproject.toml
+├── uv.lock
+└── best_model.md
