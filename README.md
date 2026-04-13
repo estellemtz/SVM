@@ -75,7 +75,7 @@ uv sync
 4. Ouvrir le notebook :
 
    ```
-   notebooks/projet_ml_courses_hippiques.ipynb
+   notebooks/projet_ml_courses_hippiques_Estelle_MARTINEZ.ipynb
    ```
 
 ---
@@ -124,6 +124,10 @@ L’analyse du modèle repose sur des méthodes d’interprétation globale et l
 Le projet met en évidence que certaines variables influencent fortement la probabilité d’un cheval de finir dans le top 3, notamment les performances passées, les cotes et les caractéristiques de la course.
 
 ---
+
+## Information
+
+Spécification des hyperparamètres du  meilleur modèle dans le fichier **BEST_MODEL**
 
 ## Limites
 
